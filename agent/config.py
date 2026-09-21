@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(ROOT / ".env")
 DART_API_KEY = os.getenv("DART_API_KEY")
-NONGSHIM_CORP_CODE = os.getenv("NONGSHIM_CORP_CODE")
+NONGSHIM_CORP_CODE = os.getenv("NONGSHIM_CORP_CODE", "00108241")
 DART_BASE_URL = "https://opendart.fss.or.kr/api"
 YEARS = [2021, 2022, 2023, 2024, 2025]
 REPORT_CODE = "11011"
